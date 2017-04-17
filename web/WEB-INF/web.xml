@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <context-param>
+        <param-name>emailOfewbmaster</param-name>
+        <param-value>webmaster@hotmail.com</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.test.TestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>requestInfo</servlet-name>
+        <servlet-class>com.test.HttpInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>requestInfo</servlet-name>
+        <url-pattern>/ri</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.test.HelloServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/HelloServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Font</servlet-name>
+        <servlet-class>com.test.FontServlet</servlet-class>
+        <init-param>
+            <param-name>color</param-name>
+            <param-value>blue</param-value>
+        </init-param>
+        <init-param>
+            <param-name>size</param-name>
+            <param-value>40</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>ContextTesterServlet</servlet-name>
+        <servlet-class>com.test.ContextTesterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ContextTesterServlet</servlet-name>
+        <url-pattern>/contexttesterservlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Font</servlet-name>
+        <url-pattern>/font</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lift</servlet-name>
+        <servlet-class>com.test.LifeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lift</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lifeInit</servlet-name>
+        <servlet-class>com.test.LifeServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lifeInit</servlet-name>
+        <url-pattern>/liftInit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>com.test.DownloadServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>check</servlet-name>
+        <servlet-class>com.test.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>check</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>out</servlet-name>
+        <servlet-class>com.test.OutServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>out</servlet-name>
+        <url-pattern>/out</url-pattern>
+    </servlet-mapping>
+</web-app>
