@@ -9,15 +9,15 @@
         <param-value>webmaster@hotmail.com</param-value>
     </context-param>
 
-    <servlet>
-        <servlet-name>hello</servlet-name>
-        <servlet-class>com.test.TestServlet</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>hello</servlet-name>-->
+        <!--<servlet-class>com.test.TestServlet</servlet-class>-->
+    <!--</servlet>-->
 
-    <servlet-mapping>
-        <servlet-name>hello</servlet-name>
-        <url-pattern>/*</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>hello</servlet-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</servlet-mapping>-->
 
     <servlet>
         <servlet-name>requestInfo</servlet-name>
